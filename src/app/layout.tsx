@@ -18,6 +18,7 @@ export const metadata: Metadata = {
 };
 
 import { GlobalBackground } from "@/components/ui/global-background";
+import GlobalChatWidget from "@/components/GlobalChatWidget";
 
 export default function RootLayout({
   children,
@@ -29,11 +30,12 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased dark`}
     >
-      <body className="min-h-full flex flex-col text-white bg-[#0f0f13] relative z-0">
+      <body className="min-h-full flex flex-col text-white bg-[#0f0f13] relative z-0 overflow-x-hidden">
         <GlobalBackground />
         <div className="relative z-10 flex-1 flex flex-col">
           {children}
         </div>
+        <GlobalChatWidget />
       </body>
     </html>
   );
