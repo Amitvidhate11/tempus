@@ -9,10 +9,10 @@ export default function StudentPortal() {
   const router = useRouter();
 
   const departments = [
-    { name: "Student Services", wait: "8 min", color: "bg-blue-500" },
-    { name: "Financial Aid", wait: "15 min", color: "bg-green-500" },
-    { name: "Admissions", wait: "5 min", color: "bg-yellow-500" },
-    { name: "IT Support", wait: "12 min", color: "bg-purple-500" },
+    { name: "Admin Office", wait: "8 min", color: "bg-blue-500" },
+    { name: "Accounts", wait: "15 min", color: "bg-green-500" },
+    { name: "Student Section", wait: "5 min", color: "bg-yellow-500" },
+    { name: "Academics", wait: "12 min", color: "bg-purple-500" },
   ];
 
   const isInQueue = state.myQueues && state.myQueues.length > 0;
@@ -79,8 +79,9 @@ export default function StudentPortal() {
               <span className="text-sm font-semibold text-white">Available Queues</span>
               <select className="bg-transparent border border-[#333] text-sm text-gray-300 py-1 px-2 rounded-sm focus:outline-none">
                 <option>All Departments</option>
-                <option>Admins Office</option>
-                <option>Account Section</option>
+                <option>Admin Office</option>
+                <option>Accounts</option>
+                <option>Student Section</option>
                 <option>Academics</option>
               </select>
             </div>

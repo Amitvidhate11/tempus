@@ -42,8 +42,8 @@ const initialState: QueueState = {
       { token: "A-103", name: "Neha Gupta", joinedAt: "10:20 AM", status: "Waiting", task: "General inquiry" },
     ],
     "Accounts": [],
-    "Scholarship": [],
-    "Assignment": [],
+    "Student Section": [],
+    "Academics": [],
   },
   history: [
     { token: "A-099", name: "Rahul Patel", joinedAt: "09:30 AM", completedAt: "09:45 AM", status: "Called", task: "ID Card Renewal" },
